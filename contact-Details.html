@@ -11,9 +11,45 @@
         <h1 class="contactDetails__header--title">
             Detalles de contacto
         </h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="myAccount.html">Mi Cuenta</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="contactDetails__description">
-        
+    <section class="contactDetails">
+        <button title="Agregar contacto" class="button__home" onclick="window.location.href='contacts.html'">
+            <img src="./assets/home.svg" alt="">
+        </button>
+            <img src="./assets/contact__3.jpg" alt="contact description image" class="contactDetails__form--image">
+            <form action="#" onsubmit="return false;" class="contactDetails__form">
+                <div>
+                    <h4>Nombre:</h4>
+                    <input type="text" name="nameInput" value="Jhonny Smith">
+                </div>
+                <div>
+                    <h4>Apellido:</h4>
+                    <input type="text" name="lastnameInput" value="Gonzales Roman">
+                </div>
+                <div>
+                    <h4>Numero personal:</h4>
+                    <input type="tel" name="personalNumberInput" value="+502 1234-0123">
+                </div>
+                <div>
+                    <h4>Numero laboral:</h4>   
+                    <input type="tel" name="industryNumberInput" value="+502 0001-1234">
+                </div>
+                <div>
+                    <h4>Dirección</h4>   
+                    <input type="text" name="addressInput" value="12 avenida, zona 1">
+                </div>
+                <div>
+                    <h4>Foto:</h4>   
+                    <input type="file" name="imageInput">
+                </div>
+                <!-- <button type="submit" class="contactDetails__form--button">Guardar</button> -->
+            </form>
     </section>  
 </body>
 </html>
