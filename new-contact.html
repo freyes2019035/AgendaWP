@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New contact</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="newContact__header">
+        <h1 class="newcontact__header--title">
+            Agregar Contacto
+        </h1>
+    </header>
+    <section class="newContact">
+        <img src="./assets/usr.png" alt="newContact image" class="newContact__form--image">
+        <form action="#" onsubmit="return false;" class="newContact__form">
+            <div>
+                <h4>Nombre:</h4>
+                <input type="text" name="nameInput" placeholder="Jhonny Smith">
+            </div>
+            <div>
+                <h4>Apellido:</h4>
+                <input type="text" name="lastnameInput" placeholder="Gonzales Roman">
+            </div>
+            <div>
+                <h4>Numero personal:</h4>
+                <input type="tel" name="personalNumberInput" placeholder="+502 1234-0123">
+            </div>
+            <div>
+                <h4>Numero laboral:</h4>   
+                <input type="tel" name="industryNumberInput" placeholder="+502 0001-1234">
+            </div>
+            <div>
+                <h4>Dirección</h4>   
+                <input type="text" name="addressInput" placeholder="12 avenida, zona 1">
+            </div>
+            <div>
+                <h4>Foto:</h4>   
+                <input type="file" name="imageInput">
+            </div>
+            <button type="submit" class="newContact__form--button">Guardar</button>
+        </form>
+    </section>
+</body>
+</html>

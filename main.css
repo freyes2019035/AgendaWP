@@ -1,0 +1,354 @@
+/* CSS MADE BY FREDY REYES 2019035 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+        Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+:root {
+    --baseColor: #FF9A8B;
+    --baseLinearGradient: 90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%;
+    --textWhite: #ffffff;
+    --shadowSM: 0 0 5pt 0.5pt #D3D3D3;
+    --shadowXL: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    --inputTextIndent: 10px;
+    --inputBorderRadius: 5px;
+    --inputShadow: 0 0 5pt 0.5pt #D3D3D3;
+    --inputHeight: 60px;
+    --inputWidth: 300px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.login .login__card {
+    height: 450px;
+    width: 900px;
+    border-radius: 20px;
+    display: inline-flex;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.login .login__card .login__card--description {
+    height: 450px;
+    width: 450px;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
+    font-size: 12pt;
+    background-color: var(--baseColor);
+    background-image: linear-gradient(var(--baseLinearGradient));
+    color: white;
+}
+
+.login .login__card .login__card--description .login__card--descriptionTitle {
+    padding-top: 150px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.login .login__card .login__card--description .login__card--descriptionText {
+    padding-top: 5px;
+}
+
+.login .login__card .login__card--login {
+    height: 450px;
+    width: 450px;
+    border-radius: 0 20px 20px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.login .login__card .login__card--login .login__card--loginTitle {
+    color: #707070;
+    font-size: 48px;
+    font-weight: bold;
+    padding-top: 35px;
+}
+
+.login__form {
+    padding-top: 50px;
+    display: inline-block;
+}
+
+.login .login__card .login__card--login .login__form .login__form--emailInput {
+    display: block;
+    width: 250px;
+    height: 35px;
+    border: none;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    outline: none;
+    text-indent: 10px;
+    border-radius: 2px;
+}
+
+.login .login__card .login__card--login .login__form .login__form--emailInput::placeholder {
+    font-size: 15px;
+    font-weight: 100;
+    cursor: text;
+}
+
+.login .login__card .login__card--login .login__form .login__form--passwordInput {
+    width: 250px;
+    height: 35px;
+    margin-top: 50px;
+    display: block;
+    border: none;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    outline: none;
+    text-indent: 10px;
+    border-radius: 2px;
+}
+
+.login .login__card .login__card--login .login__form .login__form--passwordInput::placeholder {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.login .login__card .login__card--login .login__form .login__form--submitButton {
+    background-color: #FF99AC;
+    color: white;
+    border-radius: 50px;
+    width: 120px;
+    height: 40px;
+    margin-top: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.login .login__card .login__card--login .login__form .login__form--submitButton:hover {
+    box-shadow: 0 0 5pt 3pt #D3D3D3;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.login__card--newAccount a {
+    text-decoration: none;
+}
+
+/* CSS of contacts */
+.contacts__header {
+    height: 110px;
+    background-color: var(--baseColor);
+    background-image: linear-gradient(var(--baseLinearGradient));
+    background-position: center;
+    object-fit: cover;
+}
+
+.contacts__header .contacts__header--title {
+    text-align: center;
+    color: var(--textWhite);
+    font-size: 2.8rem;
+    padding-top: 10px;
+}
+
+.contacts__list {
+    height: auto;
+    width: 100%;
+}
+
+.contact__list--table {
+    margin-top: 40px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.contact__list--table tr{
+    transition: 0.5s ease-in-out;
+}
+.contact__list--table tr:hover {
+    cursor: pointer;
+    box-shadow: var(--shadowXL);
+}
+.contact__list--table td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 14pt;
+}
+.contact__list--table td img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.contact__list--table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.contact__add{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 27pt;
+    border: none;
+    outline: none;
+    background-color: var(--baseColor);
+    color: var(--textWhite);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 0%;
+    transition: 0.5s ease-in-out;
+}
+.contact__add:hover{
+    box-shadow: var(--shadowXL);
+}
+
+/*CSS OF NEW CONTACT*/
+.newContact__header {
+    height: 110px;
+    background-color: var(--baseColor);
+    background-image: linear-gradient(var(--baseLinearGradient));
+    background-position: center;
+    object-fit: cover;
+}
+
+.newContact__header .newcontact__header--title {
+    text-align: center;
+    color: var(--textWhite);
+    font-size: 2.8rem;
+    padding-top: 10px;
+}
+.newContact{
+    height: auto;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.newContact .newContact__form--image{
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: var(--shadowXL)  
+}
+.newContact .newContact__form{
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+.newContact .newContact__form input{
+    text-align: center;
+    width: var(--inputWidth);
+    height: var(--inputHeight);
+    border-radius: var(--inputBorderRadius);
+    border: var(--borderNone);
+    outline: var(--OutlineNone);
+    padding-bottom: 10px;
+    box-shadow: var(--inputShadow);
+    transition: 0.3s ease-in-out;
+}
+.newContact .newContact__form input:hover{
+    box-shadow: var(--shadowXL)
+}
+.newContact .newContact__form div h4{
+    color: #707070;
+    margin-bottom: 10px;
+}
+.newContact .newContact__form div:nth-child(1){
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: 50px;
+}
+.newContact .newContact__form div:nth-child(2){
+    grid-row: 1;
+    grid-column: 2;
+    margin-left: 20px;
+}
+.newContact .newContact__form div:nth-child(3){
+    grid-row: 1;
+    grid-column: 3;
+    margin-right: 50px;
+}
+.newContact .newContact__form div:nth-child(4){
+    grid-row: 4;
+    grid-column: 1;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.newContact .newContact__form div:nth-child(5){
+    grid-row: 4;
+    grid-column: 2;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.newContact .newContact__form div:nth-child(6){
+    grid-row: 4;
+    grid-column: 3;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.newContact .newContact__form .newContact__form--button{
+    grid-row: 5;
+    grid-column: 2;
+    margin-left: 105px;
+    margin-top: 50px;
+    cursor: pointer;
+    background-color: var(--baseColor);
+    color: var(--textWhite);
+    border-radius: 50px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+.newContact .newContact__form .newContact__form--button:hover{
+    box-shadow: 0 0 5pt 3pt #D3D3D3;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+/*CSS OF CONTACT DETAILS*/
+.contactDetails__header {
+    height: 110px;
+    background-color: var(--baseColor);
+    background-image: linear-gradient(var(--baseLinearGradient));
+    background-position: center;
+    object-fit: cover;
+}
+
+.contactDetails__header .contactDetails__header--title {
+    text-align: center;
+    color: var(--textWhite);
+    font-size: 2.8rem;
+    padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .login .login__card .login__card--description {
+        display: none;
+    }
+
+    .login .login__card {
+        height: 100vh;
+        box-shadow: none;
+    }
+
+    .contacts__list {
+        overflow: scroll;
+    }
+}
+
+/* CSS MADE BY FREDY REYES 2019035 */

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <button title="Agregar contacto" class="contact__add" onclick="window.location.href='new-contact.html'">
+        +
+    </button>
+    <header class="contacts__header">
+        <h1 class="contacts__header--title">
+            Tus contactos
+        </h1>
+    </header>
+    <section class="contacts__list">
+        <table class="contact__list--table">
+            <tr>
+                <th>Fotografia</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Numero Personal</th>
+                <th>Numero Laboral</th>
+                <th>Dirección</th>
+            </tr>
+            <tr onclick="window.location.href = 'contact-Details.html'">
+                <td><img src="./assets/contact__1.jpg" alt="contact image"></td>
+                <td>Juan Andres</td>
+                <td>Perez Lopez</td>
+                <td>+502 1234-9123</td>
+                <td>+502 1111-4124</td>
+                <td>15 avenida lote 14, zona 11 de Mixco</td>
+            </tr>
+            <tr onclick="window.location.href = 'contact-Details.html'">
+                <td><img src="./assets/contact__2.jpg" alt="contact image"></td>
+                <td>Alexia Sofia</td>
+                <td>Rodriguez perez</td>
+                <td>+502 1543-0012</td>
+                <td>+502 5311-0124</td>
+                <td>12 avenida lote 33, zona 1 de Ciudad de Guatemala</td>
+            </tr>
+            <tr onclick="window.location.href = 'contact-Details.html'">
+                <td><img src="./assets/contact__3.jpg" alt="contact image"></td>
+                <td>Eduardo Andree</td>
+                <td>chavenidaez aguirre</td>
+                <td>+502 4212-8412</td>
+                <td>+502 0909-1221</td>
+                <td>7ma avenida lote 13, zona 2 de Ciudad de Guatemala</td>
+            </tr>
+            <tr onclick="window.location.href = 'contact-Details.html'">
+                <td><img src="./assets/contact__4.jpg" alt="contact image"></td>
+                <td>Roger roman</td>
+                <td>hernadez garcia</td>
+                <td>+502 7671-0912</td>
+                <td>+502 3001-0000</td>
+                <td>18 avenida lote 12, zona 2 de villa nueva</td>
+            </tr>
+            <tr onclick="window.location.href = 'contact-Details.html'">
+                <td><img src="./assets/contact__5.jpg" alt="contact image"></td>
+                <td>Juan Pablo</td>
+                <td>Gonzales Martinez</td>
+                <td>+502 3012-8812</td>
+                <td>+502 0101-1590</td>
+                <td>9na avenida lote 11, zona 5 de Mixco</td>
+            </tr>
+            <tr onclick="window.location.href = 'contact-Details.html'">
+                <td><img src="./assets/contact__6.jpg" alt="contact image"></td>
+                <td>Maria Stephany</td>
+                <td>Smith garcia</td>
+                <td>+502 1241-8812</td>
+                <td>+502 4122-9921</td>
+                <td>8va avenida lote 1, zona 6 de Mixco. El milagro</td>
+            </tr>
+        </table>
+    </section>
+
+</body>
+
+</html>
