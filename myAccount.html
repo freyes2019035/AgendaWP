@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="myAccount__header">
+        <h1 class="myAccount__header--title">Mi cuenta</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="myAccount">
+        <button title="Agregar contacto" class="button__home" onclick="window.location.href='contacts.html'">
+            <img src="./assets/home.svg" alt="">
+        </button>
+            <img src="./assets/contact__4.jpg" alt="contact description image" class="myAccount__form--image">
+            <form action="#" onsubmit="return false;" class="myAccount__form">
+                <div>
+                    <h4>Nombre:</h4>
+                    <input type="text" name="nameInput" value="Roger Roman">
+                </div>
+                <div>
+                    <h4>Apellido:</h4>
+                    <input type="text" name="lastnameInput" value="hernandez garcia">
+                </div>
+                <div>
+                    <h4>Numero personal:</h4>
+                    <input type="tel" name="personalNumberInput" value="+502 7671-0912">
+                </div>
+                <div>
+                    <h4>Numero laboral:</h4>   
+                    <input type="tel" name="industryNumberInput" value="+502 3001-0000">
+                </div>
+                <div>
+                    <h4>Dirección</h4>   
+                    <input type="text" name="addressInput" value="18 avenida lote 12, zona 2 de villa nueva">
+                </div>
+                <div>
+                    <h4>Foto:</h4>   
+                    <input type="file" name="imageInput">
+                </div>
+                <div>
+                    <h4>Correo:</h4>   
+                    <input type="email" name="emailInput" value="roger@gmail.com">
+                </div>
+                <div>
+                    <h4>Contraseña</h4>   
+                    <input type="password" name="passwordInput" value="12334123">
+                </div>
+                <!-- <button type="submit" class="myAccount__form--button">Guardar</button> -->
+            </form>
+    </section>  
+</body>
+</html>
